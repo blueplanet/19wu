@@ -13,11 +13,7 @@ mysql2_group = is_heroku ? :development : :mysql2
 # ruby '2.0.0'
 # gem 'rails_12factor', group: :production
 
-if ENV['TRAVIS']
-  source 'https://rubygems.org'
-else
-  source 'http://ruby.taobao.org'
-end
+source 'https://rubygems.org'
 
 # if not encoding, `bundle install` command would be error. (Invalid byte sequence in GBK)
 # see http://bit.ly/12VbO9n
